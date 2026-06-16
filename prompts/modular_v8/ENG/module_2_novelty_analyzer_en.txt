@@ -1,7 +1,11 @@
-# PROMPT-ANALYTIC v.8.7 — module_2_novelty_analyzer: SCIENTIFIC NOVELTY ASSESSMENT
+# PROMPT-ANALYTIC v.8.7 â€” module_2_novelty_analyzer: SCIENTIFIC NOVELTY ASSESSMENT
 # ============================================================
 ## ARTICLE TYPE DETERMINATION (executed first)
 ## P-Novelty Checklist Question 1 (YES/NO)
+
+**Note on publication type:**
+The rule applies to all publication types, including monographs.
+If a monograph describes the author's own method/theory â€” the full P-Novelty scale (23â€“30) applies without reduction.
 
 **Question:**
 The article proposes a fundamentally new method OR develops the author's own previously published method/theory, rather than adapting a known external solution to another object or conditions.
@@ -36,36 +40,40 @@ Are the reproducibility materials (code/data/prompt/protocol) openly available?
 - Materials not described
 - Described but not accessible
 
-### P-Novelty Score Table (0–30)
+### P-Novelty Score Table (0â€“30)
 
 | Question 1 | Question 2 | Level | Score |
 |------------|------------|-------|-------|
-| YES | YES | Highest | 27–30 |
-| YES | NO | Reduced | 23–24 |
+| YES | YES | Highest | 27â€“30 |
+| YES | NO | Reduced | 23â€“24 |
 
 **Additional rule:**
-- If the method is a development of the author's own previously published work (non-trivial), rather than the first publication > **–1 point** from the maximum
+- If the method is a development of the author's own previously published work (non-trivial), rather than the first publication â†’ **â€“1 point** from the maximum
 
 **Distribution within the range:**
-- 27–30: materials fully open and sufficient + method significant for science
-- 23–24: method is new, but materials are closed or incomplete
+- 27â€“30: materials fully open and sufficient + method significant for science
+- 23â€“24: method is new, but materials are closed or incomplete
 
 ---
 
 ### I-NOVELTY
 
+**Note on publication type:**
+The rule applies to all publication types, including monographs.
+If a monograph uses external methods â€” the full I-Novelty scale (0â€“22) applies without reduction.
+
 **Applied when:**
 - P-Novelty Question 1 = NO (the article uses previously known non-author methods to obtain new data)
 - Article type = original research
 
-**Assessment criteria (0–22 points):**
+**Assessment criteria (0â€“22 points):**
 
 | Score | Level | Description |
 |-------|-------|-------------|
-| 18–22 | High | Development/adaptation of others' concepts with new non-trivial data; deep interpretation |
-| 13–17 | Medium | New data based on a known method, but without conceptual development |
-| 7–12 | Low (trivial) | Trivial application of a method to a new object; expected results |
-| 0–6 | Very low / none | No new data; descriptive work without results |
+| 18â€“22 | High | Development/adaptation of others' concepts with new non-trivial data; deep interpretation |
+| 13â€“17 | Medium | New data based on a known method, but without conceptual development |
+| 7â€“12 | Low (trivial) | Trivial application of a method to a new object; expected results |
+| 0â€“6 | Very low / none | No new data; descriptive work without results |
 
 **Accounting for mode (STEM/Humanities):**
 - STEM: novelty in experimental data, algorithms, models
@@ -73,14 +81,18 @@ Are the reproducibility materials (code/data/prompt/protocol) openly available?
 
 ### R-NOVELTY (review / brief communication)
 
-**Assessment criteria (0–15 points):**
+**Applied when:**
+- Article type = review, brief communication, technical note (not a monograph)
+- Not applied to monographs (for these, P-Novelty or I-Novelty rules apply depending on the presence of the author's method)
+
+**Assessment criteria (0â€“15 points):**
 
 | Score | Level | Description |
 |-------|-------|-------------|
-| 13–15 | High | New classification / identification of a significant gap / new research program / systematic review with meta-analysis |
-| 8–12 | Medium | Systematic review with conclusions / identified research directions / brief communication with a new idea |
-| 4–7 | Low | Narrative review without structure / brief communication without methodology / listing works with minimal analysis |
-| 0–3 | Very low | Formal review / trivial note / no contribution |
+| 13â€“15 | High | New classification / identification of a significant gap / new research program / systematic review with meta-analysis |
+| 8â€“12 | Medium | Systematic review with conclusions / identified research directions / brief communication with a new idea |
+| 4â€“7 | Low | Narrative review without structure / brief communication without methodology / listing works with minimal analysis |
+| 0â€“3 | Very low | Formal review / trivial note / no contribution |
 
 **Accounting for mode (STEM/Humanities):**
 - STEM: novelty in data systematization, meta-analysis, identifying gaps in experimental methods
@@ -90,9 +102,9 @@ Are the reproducibility materials (code/data/prompt/protocol) openly available?
 
 ## OUTPUT (table)
 
-| Article | Method Origin | Novelty Type | Score (0–30) |
+| Article | Method Origin | Novelty Type | Score (0â€“30) |
 |---------|---------------|--------------|--------------|
-| [#] | [external / author's (first) / author's (previously published)] | [P / I / R] | [0–30] |
+| [#] | [external / author's (first) / author's (previously published)] | [P / I / R] | [0â€“30] |
 
 ---
 ! When USER_MODE = 0, output table only without comments
