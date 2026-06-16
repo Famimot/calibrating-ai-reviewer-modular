@@ -17,6 +17,10 @@ Review, analytical, and recommendation papers without new scientific contributio
 
 Exception for software solutions: if the idea itself is trivial, but the paper contains or implements working software code (GitHub, executable file, API) OR provides evidence of real-world deployment, the label is upgraded to [NO] — except in cases where the code implements an obvious function (5–10 lines of Python).
 
+**Exception for monographs:**
+If the paper is a monograph and contains a description of the use of the author's method/development — the [LLM-trivial] tag is NOT applied.
+The tag is determined by STEPS 1–2 (STEM/Humanities).
+
 ## STEP 1. SCAN THE TITLES AND ABSTRACTS OF EACH PAPER
 
 Mentally count keyword occurrences for each paper.
