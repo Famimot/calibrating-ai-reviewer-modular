@@ -30,7 +30,6 @@ A detailed description of the method and validation results are presented in the
     │       └── module_6_aggregator_categorizer.txt
     │
     ├── software/
-    │   ├── llm_review_calibration_eng.exe
     │   └── llm_review_calibration_eng.py
     │
     ├── results/
