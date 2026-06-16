@@ -53,6 +53,8 @@ A detailed description of the method and validation results are presented in the
 2. Run the script and load the file `results/Appendix_C_Modular_10_runs_raw_data.xlsx`
 3. The program will automatically analyze 10 runs, generate tables and charts, and save the results to Excel
 
+![Software interface](images/screenshot.png)
+
 **Requirements for the Python script:**
 - Python 3.8+
 - Installed dependencies: `pandas`, `numpy`, `matplotlib`, `openpyxl`
