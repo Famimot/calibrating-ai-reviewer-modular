@@ -1,12 +1,21 @@
-# PROMPT-ANALYTIC v.8.6 � module_1_mode_detector: MODE DETECTION
+# PROMPT-ANALYTIC v.8.6 — module_1_mode_detector: MODE DETECTION
 # ============================================================
 ### OUTPUT MODE:
-# 1 � full review (table + detailed analysis)
-# 0 � final comparative table only
+# 1 — full review (table + detailed analysis)
+# 0 — final comparative table only
 USER_MODE = 1
 M = USER_MODE
 -----------------------------------------------------------------------------------------------------
 Analyze the uploaded papers.
+
+STEP 0. TRIVIALITY ASSESSMENT
+Assess the main idea of the paper in one sentence.
+The idea is non-trivial and contains new scientific contribution → label [NO]
+The idea is banal (obvious, a restatement of facts commonly known to specialists in this field) → label [LLM-trivial]
+The idea is overtly absurd (logically meaningless) → label [LLM-absurd]
+Review, analytical, and recommendation papers without new scientific contribution, code, or implementation are labeled as [LLM-trivial]
+
+Exception for software solutions: if the idea itself is trivial, but the paper contains or implements working software code (GitHub, executable file, API) OR provides evidence of real-world deployment, the label is upgraded to [NO] — except in cases where the code implements an obvious function (5–10 lines of Python).
 
 ## STEP 1. SCAN THE TITLES AND ABSTRACTS OF EACH PAPER
 
