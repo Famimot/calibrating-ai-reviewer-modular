@@ -1,0 +1,79 @@
+## PROMPT-ANALYTIC v.8.8 — module_3_methodology_analyzer: METHODOLOGICAL RIGOR (25%)
+---
+| Novelty Type (from Module 2) | Assessment Criteria | What NOT to require |
+|------------------------------|---------------------|---------------------|
+| I-Novelty | see checklist below | — |
+| P-Novelty | adequacy of method to goals, scale of empirical basis (whatever exists), transparency of algorithms | statistical significance, comparison with analogs, validation on independent sample, additional experiments |
+| R-Novelty | see checklist below | experimental data, statistical processing of primary data |
+
+---
+
+### CHECKLIST FOR P-NOVELTY
+
+**Response format:** only "Yes" or "No"
+
+| # | Question | Condition for "Yes" | Yes | No |
+|---|----------|---------------------|-----|-----|
+| 1 | Is the method adequate to the stated goal? | The logic of the method does not contradict the goal; the method solves the stated problem | | |
+| 2 | Is the empirical basis (if any) sufficient to illustrate the method? | Specific data (n, examples, tests) are provided, sufficient to demonstrate the method's functionality | | |
+| 3 | Is the algorithm/method steps described transparently? | A sequence of actions is described that can be understood without guesswork (steps, formulas, conditions) | | |
+
+**Score scale for P-Novelty (0–25):**
+
+| Score | Level | Condition |
+|-------|-------|-----------|
+| 22–25 | Highest | three "Yes" |
+| 16–21 | Medium | two "Yes" |
+| 10–15 | Low | one "Yes" |
+| 0–9 | Very low | zero "Yes" |
+
+---
+
+### CHECKLIST FOR I-NOVELTY
+
+**Response format:** only "Yes" or "No"
+
+| # | Question | Condition for "Yes" | Yes | No |
+|---|----------|---------------------|-----|-----|
+| 1 | Is the method/approach described with sufficient detail for understanding and critical assessment? | Key parameters are specified (equipment, modes, reagents, formulas, sequence of actions). Absence of at least one critical parameter = "No" | | |
+| 2 | Are empirical data (if required by the type of work) present and described? | Measurement results, observations, experiments are provided with indication of volume (n, number of samples, period). If data are not required for the work type > question NOT applicable (counts as "Yes") | | |
+| 3 | Are quantitative results (if stated) supported by calculations/statistics? | Numerical results are provided; calculation method or statistical test is specified. If results are qualitative (e.g., "improved") without numbers > "No" | | |
+
+**Score scale for I-Novelty (0–25):**
+
+| Score | Level | Condition |
+|-------|-------|-----------|
+| 22–25 | Highest | three "Yes" |
+| 16–21 | Medium | two "Yes" |
+| 10–15 | Low | one "Yes" |
+| 0–9 | Very low | zero "Yes" |
+
+**Additional rule:** if the article contains no empirical data (item 2 = "No"), the automatic maximum is 15 points.
+
+---
+
+### CHECKLIST FOR R-NOVELTY (review / brief communication)
+
+**Response format:** only "Yes" or "No"
+
+| # | Question | Condition for "Yes" | Yes | No |
+|---|----------|---------------------|-----|-----|
+| 1 | Are the databases and search query specified? | Specific scientific databases are listed. The reader can reproduce the search | | |
+| 2 | Are the inclusion/exclusion criteria described? | Year, publication type, language, design are specified. The decision on preprints is justified (why included or excluded) | | |
+| 3 | Is the number of articles at each selection stage specified? | Numbers are provided: found, after duplicates, after screening, included | | |
+| 4 | Is there a meta-analysis or quantitative synthesis? | A statistical synthesis of results has been performed (e.g., summary effect, heterogeneity) | | |
+
+**Score scale for R-Novelty (0–25):**
+
+| Score | Level | Condition |
+|-------|-------|-----------|
+| 22–25 | Highest | 4 "Yes" (item 4 must be "Yes") |
+| 16–21 | Medium | 2–3 "Yes" |
+| 10–15 | Low | 1 "Yes" |
+| 0–9 | Very low | 0 "Yes" |
+
+---
+! When USER_MODE = 0, output table only without comments
+! Check the calibration rule. Confirm the prompt before execution.
+
+**END OF MODULE 3**

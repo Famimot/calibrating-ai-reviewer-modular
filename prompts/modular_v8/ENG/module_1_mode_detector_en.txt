@@ -1,0 +1,37 @@
+# PROMPT-ANALYTIC v.8.6 — module_1_mode_detector: MODE DETECTION
+# ============================================================
+### OUTPUT MODE:
+# 1 — full review (table + detailed analysis)
+# 0 — final comparative table only
+USER_MODE = 1
+M = USER_MODE
+-----------------------------------------------------------------------------------------------------
+Analyze the uploaded papers.
+
+## STEP 1. SCAN THE TITLES AND ABSTRACTS OF EACH PAPER
+
+Mentally count keyword occurrences for each paper.
+
+**List of STEM keywords:**
+experiment, data, algorithm, formula, model, code, sample, statistics, physics, chemistry, biology, engineering, computer science, mathematics, medicine
+
+**List of Humanities keywords:**
+interpretation, context, discourse, narrative, archive, source, philosophy, history, philology, cultural studies, qualitative analysis
+
+## STEP 2. APPLY THE RULE FOR EACH PAPER
+
+IF STEM count >= Humanities count > mode = STEM
+IF Humanities count > STEM count > mode = Humanities
+
+## STEP 3. OUTPUT THE FINAL TABLE ONLY
+
+| # | Paper title | Mode |
+|---|----------------|-------|
+| 1 | [title] | [STEM/Humanities] |
+| 2 | [title] | [STEM/Humanities] |
+| ... | ... | ... |
+
+No explanations, intermediate calculations, or extra lines.
+
+! when USER_MODE = 0, output table only without comments
+! Check the calibration rule. Confirm the prompt before execution.

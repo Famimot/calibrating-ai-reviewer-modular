@@ -1,0 +1,101 @@
+# PROMPT-ANALYTIC v.8.7 — module_2_novelty_analyzer: SCIENTIFIC NOVELTY ASSESSMENT
+# ============================================================
+## ARTICLE TYPE DETERMINATION (executed first)
+## P-Novelty Checklist Question 1 (YES/NO)
+
+**Question:**
+The article proposes a fundamentally new method OR develops the author's own previously published method/theory, rather than adapting a known external solution to another object or conditions.
+
+**YES, if at least one condition is met:**
+- Solves a significant scientific or practical problem (with justification of significance in the article), not just a local case-specific problem
+- Proposes fundamentally new physics/mathematics/algorithm
+- Solves a new class of problems previously unsolved
+- Proposes a fundamentally different approach that changes the understanding of the problem
+- Development/improvement of the author's own previously published method (non-trivial, providing new quality)
+
+**NO, if:**
+- The method is based on minor/non-principal modifications of someone else's method
+- A known method is transferred to another object without conceptual changes
+- Application of a previously known method under different conditions
+- Trivial adaptation of the author's own method (e.g., changing input parameters without altering the logic)
+
+---
+
+## P-Novelty Checklist Question 2 (YES/NO)
+
+**Question:**
+Are the reproducibility materials (code/data/prompt/protocol) openly available?
+
+**YES, if:**
+- Direct link to a repository (GitHub, Zenodo, Figshare, Harvard Dataverse)
+- DOI of source materials
+- Direct link to Supplementary materials in the journal
+
+**NO, if:**
+- Mention of "available upon request from the author"
+- Materials not described
+- Described but not accessible
+
+### P-Novelty Score Table (0–30)
+
+| Question 1 | Question 2 | Level | Score |
+|------------|------------|-------|-------|
+| YES | YES | Highest | 27–30 |
+| YES | NO | Reduced | 23–24 |
+
+**Additional rule:**
+- If the method is a development of the author's own previously published work (non-trivial), rather than the first publication > **–1 point** from the maximum
+
+**Distribution within the range:**
+- 27–30: materials fully open and sufficient + method significant for science
+- 23–24: method is new, but materials are closed or incomplete
+
+---
+
+### I-NOVELTY
+
+**Applied when:**
+- P-Novelty Question 1 = NO (the article uses previously known non-author methods to obtain new data)
+- Article type = original research
+
+**Assessment criteria (0–22 points):**
+
+| Score | Level | Description |
+|-------|-------|-------------|
+| 18–22 | High | Development/adaptation of others' concepts with new non-trivial data; deep interpretation |
+| 13–17 | Medium | New data based on a known method, but without conceptual development |
+| 7–12 | Low (trivial) | Trivial application of a method to a new object; expected results |
+| 0–6 | Very low / none | No new data; descriptive work without results |
+
+**Accounting for mode (STEM/Humanities):**
+- STEM: novelty in experimental data, algorithms, models
+- Humanities: novelty in interpretation, context, archival sources
+
+### R-NOVELTY (review / brief communication)
+
+**Assessment criteria (0–15 points):**
+
+| Score | Level | Description |
+|-------|-------|-------------|
+| 13–15 | High | New classification / identification of a significant gap / new research program / systematic review with meta-analysis |
+| 8–12 | Medium | Systematic review with conclusions / identified research directions / brief communication with a new idea |
+| 4–7 | Low | Narrative review without structure / brief communication without methodology / listing works with minimal analysis |
+| 0–3 | Very low | Formal review / trivial note / no contribution |
+
+**Accounting for mode (STEM/Humanities):**
+- STEM: novelty in data systematization, meta-analysis, identifying gaps in experimental methods
+- Humanities: novelty in periodization, source typology, identifying gaps in theory
+
+---
+
+## OUTPUT (table)
+
+| Article | Method Origin | Novelty Type | Score (0–30) |
+|---------|---------------|--------------|--------------|
+| [#] | [external / author's (first) / author's (previously published)] | [P / I / R] | [0–30] |
+
+---
+! When USER_MODE = 0, output table only without comments
+! Check the calibration rule. Confirm the prompt before execution.
+
+**END OF MODULE 2**

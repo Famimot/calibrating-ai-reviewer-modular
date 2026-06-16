@@ -1,0 +1,97 @@
+# PROMPT-ANALYTIC v.8.6 — module_4_value_analyzer: PRACTICAL VALUE
+============================================================
+
+INPUT DATA (from previous modules)
+Before starting the assessment, record for each article:
+| Parameter | Source | Article 1 | Article 2 | Article 3 | ... |
+|-----------|--------|-----------|-----------|-----------|-----|
+| Mode | Module 1 | [STEM/H] | ... | ... | ... |
+| Novelty Type (I/P) | Module 2 | [I-Novelty/P-Novelty] | ... | ... | ... |
+
+---
+
+CRITERION: PRACTICAL VALUE (20 points)
+MAIN RULE:
+Evaluate not only what the author demonstrated the method on, but also the potential for application in other tasks / disciplines, if the author explicitly stated this or it obviously follows from the logic of the method.
+
+Prohibited:
+- Reduce the score because the author chose a narrow example to demonstrate a broad method
+- Require ready-made industrial implementation
+
+---
+
+## STEP 1. ASSESSMENT OF APPLICABILITY BREADTH (0–10 points)
+
+Determine how many disciplines / task types / contexts the result can be applied to.
+
+| Score | Level | Description | Markers in the text |
+|-------|-------|-------------|----------------------|
+| 8–10 | Interdisciplinary | Applicable in 3+ different disciplines or task classes | "the method can be applied in…", "generalizes to…", "potentially used in biology, medicine, economics…" |
+| 6–7 | Moderately broad | Applicable in related fields (2–3 disciplines) | "the method can be used in [related field 1] and [related field 2]" |
+| 3–5 | Narrow | Applicable only in its own narrow niche / task type | Examples from only one subject area, without generalization |
+| 0–2 | Single case | Applicable only to a specific object / dataset | No generalizations, everything tied to unique characteristics of the example |
+
+**Priority rule:**
+- If the author explicitly stated generalization potential (phrases above) > evaluate by the stated potential
+- If the author did not state it, but it is obvious from the method (e.g., a mathematical formula without subject binding) > can increase by 1–2 points, but with a note "not stated, but obvious"
+- If the method is rigidly tied to the subject > evaluate by fact
+
+---
+
+## STEP 2. ASSESSMENT OF DEPTH / SIGNIFICANCE (0–10 points)
+
+Determine how great the potential effect of application is.
+
+| Score | Level | Description | Markers in the text |
+|-------|-------|-------------|----------------------|
+| 9–10 | Paradigm shift | Opens a new class of tasks, changes practice in the field, creates a new direction | "for the first time allows…", "opens up the possibility for…", "changes the approach to…" |
+| 6–8 | Significant improvement | Significant increase in accuracy / speed / reliability / informativeness | improvement of 20%+, comparison with analogs in favor of the new method, solving a previously unsolvable problem |
+| 3–5 | Incremental | Small improvement or new application of an old method | improvement up to 20%, convenient demonstration, special case of a known approach |
+| 0–2 | Trivial / absent | Changes nothing, result obvious in advance, no practical benefit described | "further research is required", "potentially useful" without specifics |
+
+**Rules:**
+- For I-Novelty: significance is usually lower (3–8 points), as it is a development of existing work
+- For P-Novelty: significance can be high (6–10), if the method is truly new
+- If the author did not provide quantitative comparisons — do not automatically deduct points; evaluate by the qualitative description of the effect
+
+---
+
+## STEP 3. FINAL SCORE (0–20)
+
+**Formula:**
+Practical Value = Breadth + Depth
+
+| Breadth (0–10) | + | Depth (0–10) | = | Total (0–20) |
+|----------------|---|---|---------------|---|
+| [score] | + | [score] | = | [score] |
+
+---
+
+## STEP 4. JUSTIFICATION (mandatory output for each article)
+
+### Practical Value — [Article Title]
+
+**Applicability Breadth:** [score] / 10
+- Level: [interdisciplinary / moderately broad / narrow / single case]
+- Justification: [1–2 sentences, with a quote or indication of the presence/absence of generalizations]
+
+**Depth / Significance:** [score] / 10
+- Level: [paradigm shift / significant improvement / incremental / trivial]
+- Justification: [1–2 sentences, indicating the effect or its absence]
+
+**TOTAL:** [score] / 20
+
+---
+
+## CONTROL CHECKS BEFORE FIXING THE SCORE
+
+- Is the generalization potential taken into account, if stated by the author?
+- Am I requiring industrial implementation or a finished product?
+- For P-Novelty: do I recognize that the demonstration example may be narrow, but the method may be broad?
+- Does the justification contain specifics (scores tied to markers from the article)?
+
+---
+
+! When USER_MODE = 0, output table only without comments
+
+**END OF MODULE 4**

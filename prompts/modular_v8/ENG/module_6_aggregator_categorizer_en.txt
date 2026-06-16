@@ -1,0 +1,79 @@
+## PROMPT-ANALYTIC v.8.8 — module_6_aggregator_categorizer: CATEGORIZATION + FINAL TABLE + FORMATTING
+---
+Before starting, gather for each article from previous modules (1–5)
+
+### STEP 1. DETERMINE CATEGORY (A/B/C/D)
+
+Based on the article content (abstract + introduction + conclusions), select one category:
+
+| Category | Type of work | Key markers |
+|----------|--------------|--------------|
+| A | Fundamental work | new theory, law, conceptual discovery, paradigm shift, creation of a new scientific direction |
+| B | Applied research | experiment with active intervention, changing conditions, hypothesis testing on data, comparison of methods |
+| C | Review-analytical | analysis, measurement, synthesis without intervention, systematic review, classification, description of a phenomenon |
+| D | Scientific report / brief communication | short note, preliminary results, technical description without detailed methodology |
+
+**Rule:** If an article falls under multiple categories > choose the higher one on the scale (A > B > C > D)
+
+---
+
+### STEP 2. FINAL SCORE CALCULATION (Execute silently, without output)
+
+**Final Score = Novelty (0–30) + Methodology (0–25) + Practical Value (0–20) + Visualization (0–15) + Reproducibility (0–10)**
+
+Range: 0–100
+Execute silently, without output
+
+**INTERPRETATION OF FINAL SCORE**
+
+| Final Score | Recommendation |
+|-------------|----------------|
+| < 50 | Reject |
+| 50–70 | Accept after revision |
+| 70–90 | Accept with minor recommendations |
+| 90–100 | Accept (highest standard) |
+
+---
+
+### STEP 3. FINAL COMPARATIVE TABLE
+
+**Sorting rule:** Strictly in descending order of Final Score (from highest to lowest). Violation of the order is unacceptable.
+Before outputting the table, sort rows by "Final Score" field in descending order.
+
+| # | Article | Title | Mode | Cat. | Novelty (30) | Methodology (25) | Practical Value (20) | Visualization (15) | Reproducibility (10) | Final Score |
+|---|---------|-------|------|------|--------------|------------------|----------------------|--------------------|------------------------|-------------|
+| 1 | Art.X | [title] | S/H | A/B/C/D | [0-30] | [0-25] | [0-20] | [0-15] | [0-10] | [0-100] |
+
+**Note:** S = STEM mode, H = Humanities mode. Category is provided for information but does not affect the final score calculation.
+
+---
+
+### STEP 4. FORMATTING (mandatory elements at the end)
+
+After the final table, add the following block:
+
+---
+
+**Document Type**
+
+Review of a set of scientific articles (comparative)
+
+**General Conclusion**
+
+[Brief conclusion on the set: score range, main differences between articles, general recommendation]
+
+**Disclaimers**
+
+1. Recommendations require verification by an expert.
+2. LLM failures are possible — 5–10 runs are recommended to verify results.
+3. Visualization assessment was conducted based on textual elements (presence, captions, in-text references). The correctness of the images themselves was not checked.
+4. Verification of the correctness of formulas and statistical calculations requires expert analysis (AI does not do this).
+
+---
+! When USER_MODE = 0, output table only without comments
+
+**END OF MODULE 6**
+
+**END OF REVIEW**
+
+*"Review assistant created using DeepSeek-V3 based on prompt v.8.8 (author Kravtsov G.). Complies with GOST R 7.0.100-2018."*

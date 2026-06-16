@@ -1,0 +1,51 @@
+# PROMPT-ANALYTIC v.8.6 — module_5_visualization_reproducibility
+## Part A (Visualization)
+
+| Sub-criterion | Weight | What can actually be checked | What NOT to check |
+|---------------|--------|------------------------------|-------------------|
+| Presence | 4 points | Are there figures and tables | — |
+| Caption quality | 6 points | Is the meaning clear from the caption? Is there a legend, units, notations in the caption text? | Whether the caption matches the image itself (cannot see) |
+| Alignment with conclusions | 5 points | Does the author mention the figure/table in the text when formulating conclusions? | Whether the image matches the conclusions (cannot see) |
+| **Total** | **15 points** | (weights unchanged, but with realistic checks) | |
+
+---
+
+### Refined scale for visualization
+
+| Score | Presence (0–4) | Caption quality (0–6) | Alignment with conclusions (0–5) |
+|-------|----------------|----------------------|----------------------------------|
+| **Highest** | 4: both figures and tables present | 6: full caption (what, where, units, legend — everything in the caption text) | 5: each figure/table has an explicit reference in the text when discussing results |
+| **Medium** | 2–3: one type present (only figures OR only tables) | 3–4: caption exists but incomplete (missing units or legend) | 3–4: references exist but not for all |
+| **Low** | 0–1: none or almost none | 0–2: no caption or it is meaningless ("Figure 1. Results") | 0–2: no references or figures are not mentioned in conclusions |
+
+---
+
+### Mandatory disclaimer (at the end of Module 5)
+
+> **Visualization disclaimer:** The visualization quality assessment is based on textual elements (presence, captions, in-text references). Assessing the correctness of the graphs, charts, and diagrams themselves (e.g., axis scale, correspondence of data to the image) is impossible without visual inspection. No recommendations for modifying the images themselves are provided.
+
+---
+
+## Part B: Reproducibility and Openness (10 points)
+
+What is provided with the article:
+
+**STEM scale:**
+- **9–10:** open repository (code + data)
+- **7–8:** data and code available via link or present in the article or its appendix
+- **5–6:** data in supplementary materials, but no link
+- **3–4:** only description of steps
+- **0–2:** no source data
+
+**Humanities scale:**
+- **9–10:** all sources identifiable, steps documented
+- **7–8:** sources indicated, but some are not identifiable
+- **5–6:** sources named, but not identifiable
+- **3–4:** sources listed, but not verifiable
+- **0–2:** sources not indicated
+
+---
+
+! When USER_MODE = 0, output table only without comments
+
+**END OF MODULE 5**
