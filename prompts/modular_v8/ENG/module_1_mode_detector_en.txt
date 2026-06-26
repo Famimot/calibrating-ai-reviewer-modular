@@ -8,19 +8,6 @@ M = USER_MODE
 -----------------------------------------------------------------------------------------------------
 Analyze the uploaded papers.
 
-STEP 0. TRIVIALITY ASSESSMENT
-Assess the main idea of the paper in one sentence.
-The idea is non-trivial and contains new scientific contribution → label [NO]
-The idea is banal (obvious, a restatement of facts commonly known to specialists in this field) → label [LLM-trivial]
-Focus — there may be a trick in the text of the article! Answer the question: 'Isn't this idea absurd?' The idea is blatantly absurd (logically meaningless, parodies the scientific method, uses complex apparatus for a mundane task, or proposes a disproportionate tool) > ! mandatory tag [LLM-absurd].
-Review, analytical, and recommendation papers without new scientific contribution, code, or implementation are labeled as [LLM-trivial]
-
-Exception for software solutions: if the idea itself is trivial, but the paper contains or implements working software code (GitHub, executable file, API) OR provides evidence of real-world deployment, the label is upgraded to [NO] — except in cases where the code implements an obvious function (5–10 lines of Python).
-
-**Exception for monographs:**
-If the paper is a monograph and contains a description of the use of the author's method/development — the [LLM-trivial] tag is NOT applied.
-The tag is determined by STEPS 1–2 (STEM/Humanities).
-
 ## STEP 1. SCAN THE TITLES AND ABSTRACTS OF EACH PAPER
 
 Mentally count keyword occurrences for each paper.
