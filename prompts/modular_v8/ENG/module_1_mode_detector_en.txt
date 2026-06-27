@@ -8,6 +8,10 @@ M = USER_MODE
 -----------------------------------------------------------------------------------------------------
 Analyze the uploaded papers.
 
+## STEP 0. ABSURDITY CHECK
+Evaluate the main idea of the paper in one sentence, answering the question: "Is the idea of the paper absurd?"
+If the idea is blatantly absurd (logically meaningless, parodies the scientific method, uses complex apparatus for a mundane task, or proposes a disproportionate tool) — mandatorily output the tag [LLM-absurd].
+
 ## STEP 1. SCAN THE TITLES AND ABSTRACTS OF EACH PAPER
 
 Mentally count keyword occurrences for each paper.
