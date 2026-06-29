@@ -1,5 +1,10 @@
 # PROMPT-ANALYTIC v.8.7 — module_2_novelty_analyzer: SCIENTIFIC NOVELTY ASSESSMENT
 # ============================================================
+
+## Important Note
+A negative result of a properly conducted experiment, an honest description of limitations, and a critical appraisal of existing approaches (including criticism of AI tools) are not deficiencies and do not reduce the score. On the contrary, they are indicators of scientific integrity and methodological maturity.
+The quality of the research is evaluated, not the sign of the result.
+
 ## ARTICLE TYPE DETERMINATION (executed first)
 ## P-Novelty Checklist Question 1 (YES/NO)
 
